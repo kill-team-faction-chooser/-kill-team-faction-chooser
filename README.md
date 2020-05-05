@@ -18,6 +18,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 `ng build --prod`
 
+## Extract i18n files
+
+`npm run int:extract`
+
+### References for i18n
+
+* https://alligator.io/angular/internationalization/
+* https://www.creativebloq.com/how-to/add-multi-language-support-to-angular
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
