@@ -6,7 +6,15 @@
     "alignmentLNC": "lawful",
     "alignmentGNE": "neutral",
     "minMove": 6,
-    "maxMove": 8
+    "maxMove": 8,
+    "colors": [
+      "red",
+      "grey",
+      "black",
+      "metal",
+      "blue",
+      "ivory"
+    ]
   },
   {
     "id": "genestealers",
@@ -15,7 +23,18 @@
     "alignmentLNC": "neutral",
     "alignmentGNE": "evil",
     "minMove": 6,
-    "maxMove": 6
+    "maxMove": 6,
+    "colors": [
+      "purple",
+      "blue",
+      "red",
+      "bone",
+      "ivory",
+      "leather",
+      "yellow",
+      "black",
+      "green"
+    ]
   },
   {
     "id": "spacemarines",
@@ -24,7 +43,19 @@
     "alignmentLNC": "lawful",
     "alignmentGNE": "neutral",
     "minMove": 6,
-    "maxMove": 6
+    "maxMove": 6,
+    "colors": [
+      "blue",
+      "red",
+      "green",
+      "yellow",
+      "orange",
+      "purple",
+      "grey",
+      "brown",
+      "black",
+      "white"
+    ]
   },
   {
     "id": "orks",
@@ -33,7 +64,15 @@
     "alignmentLNC": "chaotic",
     "alignmentGNE": "evil",
     "minMove": 5,
-    "maxMove": 6
+    "maxMove": 6,
+    "colors": [
+      "green",
+      "red",
+      "blue",
+      "yellow",
+      "black",
+      "leather"
+    ]
   },
   {
     "id": "tyranids",
@@ -42,7 +81,19 @@
     "alignmentLNC": "chaotic",
     "alignmentGNE": "evil",
     "minMove": 6,
-    "maxMove": 9
+    "maxMove": 9,
+    "colors": [
+      "purple",
+      "ivory",
+      "blue",
+      "red",
+      "organge",
+      "black",
+      "yellow",
+      "green",
+      "white",
+      "bone"
+    ]
   },
   {
     "id": "darkeldar",
@@ -51,7 +102,15 @@
     "alignmentLNC": "chaotic",
     "alignmentGNE": "evil",
     "minMove": 7,
-    "maxMove": 8
+    "maxMove": 8,
+    "colors": [
+      "black",
+      "purple",
+      "green",
+      "blue",
+      "red",
+      "orange"
+    ]
   },
   {
     "id": "deathwatch",
@@ -60,7 +119,11 @@
     "alignmentLNC": "neutral",
     "alignmentGNE": "good",
     "minMove": 6,
-    "maxMove": 6
+    "maxMove": 6,
+    "colors": [
+      "black",
+      "metal"
+    ]
   },
   {
     "id": "harlequins",
@@ -69,7 +132,16 @@
     "alignmentLNC": "chaotic",
     "alignmentGNE": "good",
     "minMove": 8,
-    "maxMove": 8
+    "maxMove": 8,
+    "colors": [
+      "black",
+      "white",
+      "blue",
+      "red",
+      "yellow",
+      "green",
+      "orange"
+    ]
   },
   {
     "id": "tauempire",
@@ -78,7 +150,15 @@
     "alignmentLNC": "lawful",
     "alignmentGNE": "good",
     "minMove": 6,
-    "maxMove": 8
+    "maxMove": 8,
+    "colors": [
+      "ochre",
+      "brown",
+      "red",
+      "white",
+      "blue",
+      "green"
+    ]
   },
   {
     "id": "necrons",
@@ -87,7 +167,16 @@
     "alignmentLNC": "neutral",
     "alignmentGNE": "evil",
     "minMove": 5,
-    "maxMove": 5
+    "maxMove": 5,
+    "colors": [
+      "metal",
+      "green",
+      "gold",
+      "silver",
+      "blue",
+      "red",
+      "yellow"
+    ]
   },
   {
     "id": "choasspacemarines",
@@ -96,7 +185,14 @@
     "alignmentLNC": "chaotic",
     "alignmentGNE": "evil",
     "minMove": 6,
-    "maxMove": 6
+    "maxMove": 6,
+    "colors": [
+      "red",
+      "black",
+      "green",
+      "blue",
+      "metal"
+    ]
   },
   {
     "id": "craftworldeldar",
@@ -105,7 +201,17 @@
     "alignmentLNC": "neutral",
     "alignmentGNE": "good",
     "minMove": 7,
-    "maxMove": 7
+    "maxMove": 7,
+    "colors": [
+      "blue",
+      "red",
+      "yellow",
+      "green",
+      "bone",
+      "black",
+      "orange",
+      "purple"
+    ]
   },
   {
     "id": "deathguard",
@@ -114,7 +220,15 @@
     "alignmentLNC": "chaotic",
     "alignmentGNE": "neutral",
     "minMove": 4,
-    "maxMove": 5
+    "maxMove": 5,
+    "colors": [
+      "green",
+      "brown",
+      "black",
+      "ivory",
+      "metal",
+      "orange"
+    ]
   },
   {
     "id": "greyknights",
@@ -123,7 +237,12 @@
     "alignmentLNC": "loyal",
     "alignmentGNE": "neutral",
     "minMove": 6,
-    "maxMove": 6
+    "maxMove": 6,
+    "colors": [
+      "metal",
+      "silver",
+      "blue"
+    ]
   },
   {
     "id": "thousandsons",
@@ -132,7 +251,14 @@
     "alignmentLNC": "chaotic",
     "alignmentGNE": "neutral",
     "minMove": 5,
-    "maxMove": 6
+    "maxMove": 6,
+    "colors": [
+      "blue",
+      "yellow",
+      "gold",
+      "green",
+      "red"
+    ]
   },
   {
     "id": "imperialguard",
@@ -141,6 +267,15 @@
     "alignmentLNC": "neutral",
     "alignmentGNE": "neutral",
     "minMove": 6,
-    "maxMove": 6
+    "maxMove": 6,
+    "colors": [
+      "green",
+      "brown",
+      "grey",
+      "blue",
+      "red",
+      "khaki",
+      "black"
+    ]
   }
 ]

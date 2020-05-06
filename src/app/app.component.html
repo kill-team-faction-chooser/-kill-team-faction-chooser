@@ -54,6 +54,11 @@
             <mat-cell *matCellDef="let faction">{{faction.minMove}} - {{faction.maxMove}}</mat-cell>
           </ng-container>
 
+          <ng-container matColumnDef="colors">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Colors</mat-header-cell>
+            <mat-cell *matCellDef="let faction">{{faction.colors}}</mat-cell>
+          </ng-container>
+
           <mat-header-row *matHeaderRowDef="displayedFactionColumns"></mat-header-row>
           <mat-row *matRowDef="let row; columns: displayedFactionColumns" (click)="onRowClicked(row)"></mat-row>
         </mat-table>

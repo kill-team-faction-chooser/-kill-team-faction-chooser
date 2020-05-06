@@ -49,5 +49,6 @@ export interface Faction {
   alignmentLNC: string;
   alignmentGNE: string;
   minMove: number;
-  maxMove: number
+  maxMove: number;
+  colors: string[];
 }
