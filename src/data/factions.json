@@ -14,7 +14,9 @@
       "metal",
       "blue",
       "ivory"
-    ]
+    ],
+    "minCombat": 4,
+    "maxCombat": 3
   },
   {
     "id": "genestealers",
@@ -34,7 +36,9 @@
       "yellow",
       "black",
       "green"
-    ]
+    ],
+    "minCombat": 4,
+    "maxCombat": 3
   },
   {
     "id": "spacemarines",
@@ -55,7 +59,9 @@
       "brown",
       "black",
       "white"
-    ]
+    ],
+    "minCombat": 3,
+    "maxCombat": 3
   },
   {
     "id": "orks",
@@ -72,7 +78,9 @@
       "yellow",
       "black",
       "leather"
-    ]
+    ],
+    "minCombat": 5,
+    "maxCombat": 3
   },
   {
     "id": "tyranids",
@@ -93,7 +101,9 @@
       "green",
       "white",
       "bone"
-    ]
+    ],
+    "minCombat": 4,
+    "maxCombat": 2
   },
   {
     "id": "darkeldar",
@@ -110,7 +120,9 @@
       "blue",
       "red",
       "orange"
-    ]
+    ],
+    "minCombat": 3,
+    "maxCombat": 3
   },
   {
     "id": "deathwatch",
@@ -123,7 +135,9 @@
     "colors": [
       "black",
       "metal"
-    ]
+    ],
+    "minCombat": 3,
+    "maxCombat": 3
   },
   {
     "id": "eldarharlequins",
@@ -141,7 +155,9 @@
       "yellow",
       "green",
       "orange"
-    ]
+    ],
+    "minCombat": 3,
+    "maxCombat": 3
   },
   {
     "id": "tauempire",
@@ -158,7 +174,9 @@
       "white",
       "blue",
       "green"
-    ]
+    ],
+    "minCombat": 5,
+    "maxCombat": 5
   },
   {
     "id": "necrons",
@@ -176,7 +194,9 @@
       "blue",
       "red",
       "yellow"
-    ]
+    ],
+    "minCombat": 3,
+    "maxCombat": 3
   },
   {
     "id": "choasspacemarines",
@@ -192,7 +212,9 @@
       "green",
       "blue",
       "metal"
-    ]
+    ],
+    "minCombat": 4,
+    "maxCombat": 3
   },
   {
     "id": "craftworldeldar",
@@ -211,7 +233,9 @@
       "black",
       "orange",
       "purple"
-    ]
+    ],
+    "minCombat": 3,
+    "maxCombat": 3
   },
   {
     "id": "deathguard",
@@ -228,7 +252,9 @@
       "ivory",
       "metal",
       "orange"
-    ]
+    ],
+    "minCombat": 5,
+    "maxCombat": 3
   },
   {
     "id": "greyknights",
@@ -242,7 +268,9 @@
       "metal",
       "silver",
       "blue"
-    ]
+    ],
+    "minCombat": 3,
+    "maxCombat": 3
   },
   {
     "id": "thousandsons",
@@ -258,7 +286,9 @@
       "gold",
       "green",
       "red"
-    ]
+    ],
+    "minCombat": 3,
+    "maxCombat": 3
   },
   {
     "id": "imperialguard",
@@ -276,6 +306,8 @@
       "red",
       "khaki",
       "black"
-    ]
+    ],
+    "minCombat": 4,
+    "maxCombat": 3
   }
 ]
