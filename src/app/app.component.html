@@ -17,18 +17,36 @@
     <mat-card-title i18n="Card Title|Title for the faction search section@@factionSearchSectionTitle">Faction Search
     </mat-card-title>
     <mat-card-content>
+      <div>
+        <form>
+          <mat-form-field class="field-full-width">
+            <mat-label>Quick search</mat-label>
+            <input matInput class="mat-input-element mat-form-field-autofill-control" (keyup)="quickSearch($event.target.value)" placeholder="Faction characteristic">
+          </mat-form-field>
+        </form>
+      </div>
 
       <div class="lessons-table mat-elevation-z8" *ngIf="factionData">
-        <mat-table [dataSource]="factionDataSource">
+        <mat-table [dataSource]="factionDataSource" matSort>
+
+          <ng-container matColumnDef="id">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Id</mat-header-cell>
+            <mat-cell *matCellDef="let faction">{{faction.id}}</mat-cell>
+          </ng-container>
 
           <ng-container matColumnDef="name">
-            <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
             <mat-cell *matCellDef="let faction">{{faction.name}}</mat-cell>
           </ng-container>
 
           <ng-container matColumnDef="alignment">
-            <mat-header-cell *matHeaderCellDef>Alignment</mat-header-cell>
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Alignment</mat-header-cell>
             <mat-cell *matCellDef="let faction">{{faction.alignmentLNC}} - {{faction.alignmentGNE}}</mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="movement">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Movement</mat-header-cell>
+            <mat-cell *matCellDef="let faction">{{faction.minMove}} - {{faction.maxMove}}</mat-cell>
           </ng-container>
 
           <mat-header-row *matHeaderRowDef="displayedFactionColumns"></mat-header-row>

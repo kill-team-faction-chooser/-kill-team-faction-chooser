@@ -286,3 +286,7 @@ svg#clouds {
     visibility: hidden;
   }
 }
+
+.field-full-width {
+  width: 100%;
+}

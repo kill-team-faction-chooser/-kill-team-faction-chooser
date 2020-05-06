@@ -1,77 +1,130 @@
 [
   {
+    "id": "adeptusmechanicus",
     "name": "Adeptus Mechanicus",
     "alignmentLNC": "lawful",
-    "alignmentGNE": "neutral"
+    "alignmentGNE": "neutral",
+    "minMove": 6,
+    "maxMove": 8
   },
   {
+    "id": "genestealers",
     "name": "Genestealer Cults",
     "alignmentLNC": "neutral",
-    "alignmentGNE": "evil"
+    "alignmentGNE": "evil",
+    "minMove": 6,
+    "maxMove": 6
   },
   {
+    "id": "spacemarines",
     "name": "Adeptus Astartes",
     "alignmentLNC": "lawful",
-    "alignmentGNE": "neutral"
+    "alignmentGNE": "neutral",
+    "minMove": 6,
+    "maxMove": 6
   },
   {
+    "id": "orks",
     "name": "Orks",
     "alignmentLNC": "chaotic",
-    "alignmentGNE": "evil"
+    "alignmentGNE": "evil",
+    "minMove": 5,
+    "maxMove": 6
   },
   {
+    "id": "tyranids",
     "name": "Tyranids",
     "alignmentLNC": "chaotic",
-    "alignmentGNE": "evil"
+    "alignmentGNE": "evil",
+    "minMove": 6,
+    "maxMove": 9
   },
   {
+    "id": "darkeldar",
     "name": "Drukhari",
     "alignmentLNC": "chaotic",
-    "alignmentGNE": "evil"
+    "alignmentGNE": "evil",
+    "minMove": 7,
+    "maxMove": 8
   },
   {
+    "id": "deathwatch",
     "name": "Deathwatch",
     "alignmentLNC": "neutral",
-    "alignmentGNE": "good"
+    "alignmentGNE": "good",
+    "minMove": 6,
+    "maxMove": 6
   },
   {
+    "id": "harlequins",
     "name": "Harlequins",
     "alignmentLNC": "chaotic",
-    "alignmentGNE": "neutral"
+    "alignmentGNE": "neutral",
+    "minMove": 8,
+    "maxMove": 8
   },
   {
+    "id": "tauempire",
     "name": "T’au Empire",
     "alignmentLNC": "lawful",
-    "alignmentGNE": "good"
+    "alignmentGNE": "good",
+    "minMove": 6,
+    "maxMove": 8
   },
   {
+    "id": "necrons",
     "name": "Necrons",
     "alignmentLNC": "neutral",
-    "alignmentGNE": "evil"
+    "alignmentGNE": "evil",
+    "minMove": 5,
+    "maxMove": 5
   },
   {
+    "id": "choasspacemarines",
     "name": "Heretic Astartes",
     "alignmentLNC": "chaotic",
-    "alignmentGNE": "evil"
+    "alignmentGNE": "evil",
+    "minMove": 6,
+    "maxMove": 6
   },
   {
+    "id": "craftworldeldar",
     "name": "Asuryani",
     "alignmentLNC": "neutral",
-    "alignmentGNE": "good"
+    "alignmentGNE": "good",
+    "minMove": 7,
+    "maxMove": 7
   },
   {
+    "id": "deathguard",
     "name": "Death Guard",
     "alignmentLNC": "chaotic",
-    "alignmentGNE": "neutral"
+    "alignmentGNE": "neutral",
+    "minMove": 4,
+    "maxMove": 5
   },
   {
+    "id": "greyknights",
     "name": "Grey Knights",
     "alignmentLNC": "loyal",
-    "alignmentGNE": "neutral"
+    "alignmentGNE": "neutral",
+    "minMove": 6,
+    "maxMove": 6
   },
   {
+    "id": "thousandsons",
     "name": "Thousand Sons",
     "alignmentLNC": "chaotic",
-    "alignmentGNE": "neutral"
+    "alignmentGNE": "neutral",
+    "minMove": 5,
+    "maxMove": 6
+  },
+  {
+    "id": "imperialguard",
+    "name": "Astra Militarium",
+    "alignmentLNC": "neutral",
+    "alignmentGNE": "neutral",
+    "minMove": 6,
+    "maxMove": 6
   }
 ]
