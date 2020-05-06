@@ -3,8 +3,10 @@ import {environment} from '../environments/environment';
 import factionDataJsonFile from '../data/factions.json';
 import {MatTableDataSource} from '@angular/material/table';
 import {MatPaginator} from '@angular/material/paginator';
-import {MatSort} from '@angular/material/sort';
+import {MatSort, MatSortable} from '@angular/material/sort';
 import {FormControl} from '@angular/forms';
+import {Observable} from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -23,13 +25,48 @@ export class AppComponent implements OnInit {
 
   factionDataSource = new MatTableDataSource<Faction>(this.factionData);
 
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  private paginator: MatPaginator;
+  private sort: MatSort;
 
-  ngOnInit() {
+  @ViewChild(MatSort) set matSort(ms: MatSort) {
+    this.sort = ms;
+    this.sort.sort(({ id: 'name', start: 'asc'}) as MatSortable);
+    this.setDataSourceAttributes();
+  }
+
+  @ViewChild(MatPaginator) set matPaginator(mp: MatPaginator) {
+    this.paginator = mp;
+    this.setDataSourceAttributes();
+  }
+
+  setDataSourceAttributes() {
     this.factionDataSource.paginator = this.paginator;
     this.factionDataSource.sort = this.sort;
+
+    if (this.paginator && this.sort) {
+      this.quickSearch('');
+    }
   }
+
+  /*filteredOptions: Observable<string[]>;
+  minimumMovementControl = new FormControl();*/
+
+  ngOnInit() {
+    /*this.factionDataSource.paginator = this.paginator;
+    this.factionDataSource.sort = this.sort;*/
+
+    /*this.filteredOptions = this.minimumMovementControl.valueChanges
+      .pipe(
+        startWith(''),
+        map(value => this.minimumMovementFilter(value))
+      );*/
+  }
+
+  /*private minimumMovementFilter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+
+    return this.factionDataSource.filter = (option => option.toLowerCase().includes(filterValue));
+  }*/
 
   onRowClicked(row) {
     console.log('Row clicked: ', row);
@@ -39,6 +76,13 @@ export class AppComponent implements OnInit {
     filterValue = filterValue.trim(); // Remove whitespace
     filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
     this.factionDataSource.filter = filterValue;
+  }
+
+  setupFilter(column: string) {
+    this.factionDataSource.filterPredicate = (d: Faction, filter: string) => {
+      const textToSearch = d[column] && d[column].toLowerCase() || '';
+      return textToSearch.indexOf(filter) !== -1;
+    };
   }
 }
 
