@@ -26,12 +26,17 @@
         </form>
       </div>
 
-      <div class="lessons-table mat-elevation-z8" *ngIf="factionData">
+      <div class="lessons-table mat-elevation-z4" *ngIf="factionData">
         <mat-table [dataSource]="factionDataSource" matSort>
 
           <ng-container matColumnDef="id">
             <mat-header-cell *matHeaderCellDef mat-sort-header>Id</mat-header-cell>
             <mat-cell *matCellDef="let faction">{{faction.id}}</mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="thumbnail">
+            <mat-header-cell *matHeaderCellDef mat-sort-header></mat-header-cell>
+            <mat-cell *matCellDef="let faction"><img src="../assets/img/factions/{{faction.thumbnailpath}}"></mat-cell>
           </ng-container>
 
           <ng-container matColumnDef="name">

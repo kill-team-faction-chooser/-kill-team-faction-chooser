@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
 
   @Input() filterControl: FormControl;
 
-  displayedFactionColumns: string[] =  ['name', 'alignment', 'movement'];
+  displayedFactionColumns: string[] =  ['thumbnail', 'name', 'alignment', 'movement'];
 
   factionData: Faction[] = factionDataJsonFile;
 
@@ -45,6 +45,7 @@ export class AppComponent implements OnInit {
 export interface Faction {
   id: string;
   name: string;
+  thumbnailpath: string;
   alignmentLNC: string;
   alignmentGNE: string;
   minMove: number;
