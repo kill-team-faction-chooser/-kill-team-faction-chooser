@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Adeptus Mechanicus",
+    "alignmentLNC": "lawful",
+    "alignmentGNE": "neutral"
+  },
+  {
+    "name": "Genestealer Cults",
+    "alignmentLNC": "neutral",
+    "alignmentGNE": "evil"
+  },
+  {
+    "name": "Adeptus Astartes",
+    "alignmentLNC": "lawful",
+    "alignmentGNE": "neutral"
+  },
+  {
+    "name": "Orks",
+    "alignmentLNC": "chaotic",
+    "alignmentGNE": "evil"
+  },
+  {
+    "name": "Tyranids",
+    "alignmentLNC": "chaotic",
+    "alignmentGNE": "evil"
+  },
+  {
+    "name": "Drukhari",
+    "alignmentLNC": "chaotic",
+    "alignmentGNE": "evil"
+  },
+  {
+    "name": "Deathwatch",
+    "alignmentLNC": "neutral",
+    "alignmentGNE": "good"
+  },
+  {
+    "name": "Harlequins",
+    "alignmentLNC": "chaotic",
+    "alignmentGNE": "neutral"
+  },
+  {
+    "name": "T’au Empire",
+    "alignmentLNC": "lawful",
+    "alignmentGNE": "good"
+  },
+  {
+    "name": "Necrons",
+    "alignmentLNC": "neutral",
+    "alignmentGNE": "evil"
+  },
+  {
+    "name": "Heretic Astartes",
+    "alignmentLNC": "chaotic",
+    "alignmentGNE": "evil"
+  },
+  {
+    "name": "Asuryani",
+    "alignmentLNC": "neutral",
+    "alignmentGNE": "good"
+  },
+  {
+    "name": "Death Guard",
+    "alignmentLNC": "chaotic",
+    "alignmentGNE": "neutral"
+  },
+  {
+    "name": "Grey Knights",
+    "alignmentLNC": "loyal",
+    "alignmentGNE": "neutral"
+  },
+  {
+    "name": "Thousand Sons",
+    "alignmentLNC": "chaotic",
+    "alignmentGNE": "neutral"
+  }
+]
