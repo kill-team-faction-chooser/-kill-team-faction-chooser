@@ -38,3 +38,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Resources
 
 * src/data/factions.json : characteristics of the factions.
+* Kill Team resources : https://www.warhammer-community.com/2018/07/06/kill-team-faction-focus-index/

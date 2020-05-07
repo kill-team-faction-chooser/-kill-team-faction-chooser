@@ -290,3 +290,11 @@ svg#clouds {
 .field-full-width {
   width: 100%;
 }
+
+.faction-thumbnail {
+  width: 100px;
+}
+
+.faction-table{
+  width: 100%;
+}

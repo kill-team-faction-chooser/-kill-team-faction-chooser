@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
 
   @Input() filterControl: FormControl;
 
-  displayedFactionColumns: string[] =  ['thumbnail', 'name', 'alignment', 'movement', 'combat'];
+  displayedFactionColumns: string[] =  ['thumbnail', 'name', 'alignment', 'movement', 'combat', 'shoot'];
 
   factionData: Faction[] = factionDataJsonFile;
 
@@ -95,4 +95,8 @@ export interface Faction {
   minMove: number;
   maxMove: number;
   colors: string[];
+  minCombat: number;
+  maxCombat: number;
+  minShoot: number;
+  maxShoot: number;
 }
