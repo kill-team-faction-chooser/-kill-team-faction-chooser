@@ -7,6 +7,7 @@ import {MatSort, MatSortable} from '@angular/material/sort';
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
+import {conditionallyCreateMapObjectLiteral} from '@angular/compiler/src/render3/view/util';
 
 @Component({
   selector: 'app-root',
@@ -73,9 +74,29 @@ export class AppComponent implements OnInit {
   }
 
   quickSearch(filterValue: string) {
+    this.setupQuickSearchFilter();
+
     filterValue = filterValue.trim(); // Remove whitespace
     filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
     this.factionDataSource.filter = filterValue;
+  }
+
+  setupQuickSearchFilter() {
+    this.factionDataSource.filterPredicate =
+      (faction: Faction, filters: string) => {
+        const matchFilter = [];
+        const filterArray = filters.split(/\W+/);
+        const columns = [faction.id, faction.name, faction.alignmentGNE, faction.alignmentLNC, faction.colors.toString()];
+
+        // Main
+        filterArray.forEach(filter => {
+          const customFilter = [];
+          columns.forEach(column => customFilter.push(column.toLowerCase().includes(filter.toLowerCase())));
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        });
+
+        return matchFilter.every(Boolean); // AND
+      };
   }
 
   setupFilter(column: string) {

@@ -62,7 +62,10 @@
       "grey",
       "brown",
       "black",
-      "white"
+      "white",
+      "silver",
+      "gold",
+      "metal"
     ],
     "minCombat": 3,
     "maxCombat": 3,
@@ -103,7 +106,7 @@
       "ivory",
       "blue",
       "red",
-      "organge",
+      "orange",
       "black",
       "yellow",
       "green",
