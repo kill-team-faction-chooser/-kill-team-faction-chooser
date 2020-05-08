@@ -19,12 +19,13 @@
        fxLayoutGap="30px"
        fxLayoutGap.xs="0">
     <mat-card>
-      <mat-card-title i18n="Card Title|Title for the faction search section@@factionSearchSectionTitle">Faction Search
+      <mat-card-title i18n="Card Title|Title for the faction search section@@factionSearchSectionTitle">Faction search
       </mat-card-title>
       <mat-card-content>
         <div class="form-container">
           <form>
-            <mat-form-field class="field-full-width">
+            <div class="container">
+            <mat-form-field>
               <mat-label>Quick search</mat-label>
               <input matInput class="mat-input-element mat-form-field-autofill-control"
                      (keyup)="search()"
@@ -32,68 +33,98 @@
                      [(ngModel)]="quickSearchField"
                      name="quickSearchField">
             </mat-form-field>
-
-            <mat-label>Movement</mat-label>
-            <div class="container"
-                 fxLayout
-                 fxLayout.xs="column"
-                 fxLayoutAlign="center"
-                 fxLayoutGap="30px"
-                 fxLayoutGap.xs="0">
-              <div>
-                <input id="minimumMovement" matInput class="mat-input-element mat-form-field-autofill-control"
-                       type="number" placeholder="Minimum movement" [(ngModel)]="searchFaction.minMove" name="minMove"
-                       min="4" max="9"
-                       (change)="search()"/>
-              </div>
-              <div>
-                <input id="maximumMovement" matInput class="mat-input-element mat-form-field-autofill-control"
-                       type="number" placeholder="Maximum movement" [(ngModel)]="searchFaction.maxMove"
-                       name="maxMove" min="4" max="9"
-                        (change)="search()" />
-              </div>
             </div>
 
-            <mat-label>Combat</mat-label>
-            <div class="container"
-                 fxLayout
-                 fxLayout.xs="column"
-                 fxLayoutAlign="center"
-                 fxLayoutGap="30px"
-                 fxLayoutGap.xs="0">
-              <div>
-                <input id="minimumCombat" matInput class="mat-input-element mat-form-field-autofill-control"
-                       type="number" placeholder="Minimum combat" [(ngModel)]="searchFaction.minCombat" name="minCombat"
-                       min="2" max="5"
-                       (change)="search()"/>
+            <div class="container">
+            <mat-form-field>
+              <mat-label>Movement</mat-label>
+              <div class="container"
+                   fxLayout
+                   fxLayout.xs="column"
+                   fxLayoutAlign="center"
+                   fxLayoutGap="30px"
+                   fxLayoutGap.xs="0">
+                <div>
+                  <input id="minimumMovement" matInput class="mat-input-element mat-form-field-autofill-control"
+                         type="number" placeholder="Minimum movement" [(ngModel)]="searchFaction.minMove" name="minMove"
+                         min="4" max="9"
+                         (change)="search()"/>
+                </div>
+                <div>
+                  <input id="maximumMovement" matInput class="mat-input-element mat-form-field-autofill-control"
+                         type="number" placeholder="Maximum movement" [(ngModel)]="searchFaction.maxMove"
+                         name="maxMove" min="4" max="9"
+                         (change)="search()"/>
+                </div>
               </div>
-              <div>
-                <input id="maximumCombat" matInput class="mat-input-element mat-form-field-autofill-control"
-                       type="number" placeholder="Maximum combat" [(ngModel)]="searchFaction.maxCombat"
-                       name="maxCombat" min="2" max="5"
-                       (change)="search()" />
-              </div>
+            </mat-form-field>
             </div>
 
-            <mat-label>Shoot</mat-label>
-            <div class="container"
-                 fxLayout
-                 fxLayout.xs="column"
-                 fxLayoutAlign="center"
-                 fxLayoutGap="30px"
-                 fxLayoutGap.xs="0">
-              <div>
-                <input id="minimumShoot" matInput class="mat-input-element mat-form-field-autofill-control"
-                       type="number" placeholder="Minimum shoot" [(ngModel)]="searchFaction.minShoot" name="minShoot"
-                       min="3" max="6"
-                       (change)="search()"/>
+            <div class="container">
+            <mat-form-field>
+              <mat-label>Combat</mat-label>
+              <div class="container"
+                   fxLayout
+                   fxLayout.xs="column"
+                   fxLayoutAlign="center"
+                   fxLayoutGap="30px"
+                   fxLayoutGap.xs="0">
+                <div>
+                  <input id="minimumCombat" matInput class="mat-input-element mat-form-field-autofill-control"
+                         type="number" placeholder="Minimum combat" [(ngModel)]="searchFaction.minCombat"
+                         name="minCombat"
+                         min="2" max="5"
+                         (change)="search()"/>
+                </div>
+                <div>
+                  <input id="maximumCombat" matInput class="mat-input-element mat-form-field-autofill-control"
+                         type="number" placeholder="Maximum combat" [(ngModel)]="searchFaction.maxCombat"
+                         name="maxCombat" min="2" max="5"
+                         (change)="search()"/>
+                </div>
               </div>
-              <div>
-                <input id="maximumShoot" matInput class="mat-input-element mat-form-field-autofill-control"
-                       type="number" placeholder="Maximum shoot" [(ngModel)]="searchFaction.maxShoot"
-                       name="maxShoot" min="3" max="6"
-                       (change)="search()" />
+            </mat-form-field>
+            </div>
+
+            <div class="container">
+            <mat-form-field>
+              <mat-label>Shoot</mat-label>
+              <div class="container"
+                   fxLayout
+                   fxLayout.xs="column"
+                   fxLayoutAlign="center"
+                   fxLayoutGap="30px"
+                   fxLayoutGap.xs="0">
+                <div>
+                  <input id="minimumShoot" matInput class="mat-input-element mat-form-field-autofill-control"
+                         type="number" placeholder="Minimum shoot" [(ngModel)]="searchFaction.minShoot" name="minShoot"
+                         min="3" max="6"
+                         (change)="search()"/>
+                </div>
+                <div>
+                  <input id="maximumShoot" matInput class="mat-input-element mat-form-field-autofill-control"
+                         type="number" placeholder="Maximum shoot" [(ngModel)]="searchFaction.maxShoot"
+                         name="maxShoot" min="3" max="6"
+                         (change)="search()"/>
+                </div>
               </div>
+            </mat-form-field>
+            </div>
+
+            <div class="container">
+            <mat-form-field>
+              <mat-label>Dominant color</mat-label>
+              <mat-select [(value)]="searchFaction.colors" (selectionChange)="search()">
+                <mat-option>None</mat-option>
+                <mat-option *ngFor="let color of colors" [value]="color.value">
+                  {{color.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            </div>
+
+            <div class="container">
+              <button mat-button (click)="resetForm()">Reset</button>
             </div>
           </form>
         </div>

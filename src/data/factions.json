@@ -29,6 +29,7 @@
     "minMove": 6,
     "maxMove": 6,
     "colors": [
+      "pink",
       "purple",
       "blue",
       "red",
@@ -37,7 +38,8 @@
       "leather",
       "yellow",
       "black",
-      "green"
+      "green",
+      "turquoise"
     ],
     "minCombat": 4,
     "maxCombat": 3,
@@ -102,6 +104,7 @@
     "minMove": 6,
     "maxMove": 9,
     "colors": [
+      "pink",
       "purple",
       "ivory",
       "blue",
@@ -132,7 +135,8 @@
       "green",
       "blue",
       "red",
-      "orange"
+      "orange",
+      "turquoise"
     ],
     "minCombat": 3,
     "maxCombat": 3,
@@ -231,6 +235,8 @@
     "minMove": 6,
     "maxMove": 6,
     "colors": [
+      "pink",
+      "purple",
       "red",
       "black",
       "green",
@@ -258,7 +264,8 @@
       "bone",
       "black",
       "orange",
-      "purple"
+      "purple",
+      "turquoise"
     ],
     "minCombat": 3,
     "maxCombat": 3,
@@ -317,7 +324,8 @@
       "yellow",
       "gold",
       "green",
-      "red"
+      "red",
+      "turquoise"
     ],
     "minCombat": 3,
     "maxCombat": 3,

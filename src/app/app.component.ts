@@ -27,6 +27,25 @@ export class AppComponent implements OnInit {
   quickSearchField = '';
   searchFaction: Faction = new Faction();
 
+  colors: Color[] = [
+    {value: 'black', viewValue: 'Black'},
+    {value: 'blue', viewValue: 'Blue'},
+    {value: 'bone', viewValue: 'Bone'},
+    {value: 'brown', viewValue: 'Brown'},
+    {value: 'gold', viewValue: 'Gold'},
+    {value: 'green', viewValue: 'Green'},
+    {value: 'leather', viewValue: 'Leather'},
+    {value: 'metal', viewValue: 'Metal'},
+    {value: 'orange', viewValue: 'Orange'},
+    {value: 'pink', viewValue: 'Pink'},
+    {value: 'purple', viewValue: 'Purple'},
+    {value: 'red', viewValue: 'Red'},
+    {value: 'silver', viewValue: 'Silver'},
+    {value: 'turquoise', viewValue: 'Turquoise'},
+    {value: 'white', viewValue: 'White'},
+    {value: 'yellow', viewValue: 'Yellow'}
+  ];
+
   @ViewChild(MatSort) set matSort(ms: MatSort) {
     this.sort = ms;
     this.sort.sort(({id: 'name', start: 'asc'}) as MatSortable);
@@ -36,6 +55,14 @@ export class AppComponent implements OnInit {
   @ViewChild(MatPaginator) set matPaginator(mp: MatPaginator) {
     this.paginator = mp;
     this.setDataSourceAttributes();
+  }
+
+  resetForm() {
+    this.quickSearchField = '';
+    this.searchFaction = new Faction();
+    this.initNumberFields();
+
+    this.search();
   }
 
   setDataSourceAttributes() {
@@ -48,6 +75,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.initNumberFields();
+
+    this.setupSearchFilter();
+  }
+
+  initNumberFields() {
     this.searchFaction.minMove = 4;
     this.searchFaction.maxMove = 9;
 
@@ -56,8 +89,6 @@ export class AppComponent implements OnInit {
 
     this.searchFaction.minShoot = 6;
     this.searchFaction.maxShoot = 3;
-
-    this.setupSearchFilter();
   }
 
   onRowClicked(row) {
@@ -128,6 +159,17 @@ export class AppComponent implements OnInit {
           matchFilter.push(customFilter.some(Boolean)); // OR
         }
 
+        if (this.searchFaction.colors) {
+          const color = this.searchFaction.colors.toString();
+
+          const customFilter = [];
+          for (let i = 0; i < faction.colors.length; i++) {
+            customFilter.push(faction.colors[i] === color);
+          }
+
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
         return matchFilter.every(Boolean); // AND
       };
   }
@@ -146,4 +188,9 @@ export class Faction {
   maxCombat: number;
   minShoot: number;
   maxShoot: number;
+}
+
+export class Color {
+  value: string;
+  viewValue: string;
 }
