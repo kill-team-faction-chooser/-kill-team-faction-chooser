@@ -18,7 +18,9 @@
     "minCombat": 4,
     "maxCombat": 3,
     "minShoot": 3,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 9,
+    "maxPointCost": 15
   },
   {
     "id": "genestealers",
@@ -44,7 +46,9 @@
     "minCombat": 4,
     "maxCombat": 3,
     "minShoot": 6,
-    "maxShoot": 4
+    "maxShoot": 4,
+    "minPointCost": 5,
+    "maxPointCost": 15
   },
   {
     "id": "spacemarines",
@@ -72,7 +76,9 @@
     "minCombat": 3,
     "maxCombat": 3,
     "minShoot": 3,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 10,
+    "maxPointCost": 17
   },
   {
     "id": "orks",
@@ -93,7 +99,9 @@
     "minCombat": 5,
     "maxCombat": 3,
     "minShoot": 5,
-    "maxShoot": 4
+    "maxShoot": 4,
+    "minPointCost": 3,
+    "maxPointCost": 12
   },
   {
     "id": "tyranids",
@@ -119,7 +127,9 @@
     "minCombat": 4,
     "maxCombat": 2,
     "minShoot": 4,
-    "maxShoot": 4
+    "maxShoot": 4,
+    "minPointCost": 4,
+    "maxPointCost": 25
   },
   {
     "id": "darkeldar",
@@ -141,13 +151,15 @@
     "minCombat": 3,
     "maxCombat": 3,
     "minShoot": 3,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 7,
+    "maxPointCost": 9
   },
   {
     "id": "deathwatch",
     "name": "Deathwatch",
     "thumbnailpath": "deathwatch.png",
-    "alignmentLNC": "neutral",
+    "alignmentLNC": "lawful",
     "alignmentGNE": "good",
     "minMove": 6,
     "maxMove": 6,
@@ -158,7 +170,9 @@
     "minCombat": 3,
     "maxCombat": 3,
     "minShoot": 3,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 14,
+    "maxPointCost": 16
   },
   {
     "id": "eldarharlequins",
@@ -180,7 +194,9 @@
     "minCombat": 3,
     "maxCombat": 3,
     "minShoot": 3,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 12,
+    "maxPointCost": 12
   },
   {
     "id": "tauempire",
@@ -201,7 +217,9 @@
     "minCombat": 5,
     "maxCombat": 5,
     "minShoot": 5,
-    "maxShoot": 4
+    "maxShoot": 4,
+    "minPointCost": 0,
+    "maxPointCost": 20
   },
   {
     "id": "necrons",
@@ -224,7 +242,9 @@
     "minCombat": 3,
     "maxCombat": 3,
     "minShoot": 6,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 10,
+    "maxPointCost": 16
   },
   {
     "id": "choasspacemarines",
@@ -246,7 +266,9 @@
     "minCombat": 4,
     "maxCombat": 3,
     "minShoot": 4,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 4,
+    "maxPointCost": 13
   },
   {
     "id": "craftworldeldar",
@@ -270,7 +292,9 @@
     "minCombat": 3,
     "maxCombat": 3,
     "minShoot": 3,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 6,
+    "maxPointCost": 11
   },
   {
     "id": "deathguard",
@@ -291,7 +315,9 @@
     "minCombat": 5,
     "maxCombat": 3,
     "minShoot": 6,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 3,
+    "maxPointCost": 15
   },
   {
     "id": "greyknights",
@@ -309,7 +335,9 @@
     "minCombat": 3,
     "maxCombat": 3,
     "minShoot": 3,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 18,
+    "maxPointCost": 19
   },
   {
     "id": "thousandsons",
@@ -330,7 +358,9 @@
     "minCombat": 3,
     "maxCombat": 3,
     "minShoot": 4,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 7,
+    "maxPointCost": 17
   },
   {
     "id": "imperialguard",
@@ -352,6 +382,8 @@
     "minCombat": 4,
     "maxCombat": 3,
     "minShoot": 4,
-    "maxShoot": 3
+    "maxShoot": 3,
+    "minPointCost": 5,
+    "maxPointCost": 10
   }
 ]

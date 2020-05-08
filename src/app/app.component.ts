@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   title = 'kill-team-faction-chooser';
   currentApplicationVersion = environment.appVersion;
 
-  displayedFactionColumns: string[] = ['thumbnail', 'name', 'alignment', 'movement', 'combat', 'shoot'];
+  displayedFactionColumns: string[] = ['thumbnail', 'name', 'alignment', 'movement', 'combat', 'shoot', 'pointCost'];
 
   factionData: Faction[] = factionDataJsonFile;
 
@@ -102,6 +102,9 @@ export class AppComponent implements OnInit {
 
     this.searchFaction.minShoot = 6;
     this.searchFaction.maxShoot = 3;
+
+    this.searchFaction.minPointCost = 0;
+    this.searchFaction.maxPointCost = 25;
   }
 
   onRowClicked(row) {
@@ -201,6 +204,20 @@ export class AppComponent implements OnInit {
           matchFilter.push(customFilter.some(Boolean)); // OR
         }
 
+        if (this.searchFaction.minPointCost) {
+          const pointCost = this.searchFaction.minPointCost;
+          const customFilter = [];
+          customFilter.push(faction.minPointCost >= pointCost);
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
+        if (this.searchFaction.maxPointCost) {
+          const pointCost = this.searchFaction.maxPointCost;
+          const customFilter = [];
+          customFilter.push(faction.maxPointCost <= pointCost);
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
         return matchFilter.every(Boolean); // AND
       };
   }
@@ -219,6 +236,8 @@ export class Faction {
   maxCombat: number;
   minShoot: number;
   maxShoot: number;
+  minPointCost: number;
+  maxPointCost: number;
 }
 
 export class Color {
