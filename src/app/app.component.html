@@ -53,6 +53,48 @@
                         (change)="search()" />
               </div>
             </div>
+
+            <mat-label>Combat</mat-label>
+            <div class="container"
+                 fxLayout
+                 fxLayout.xs="column"
+                 fxLayoutAlign="center"
+                 fxLayoutGap="30px"
+                 fxLayoutGap.xs="0">
+              <div>
+                <input id="minimumCombat" matInput class="mat-input-element mat-form-field-autofill-control"
+                       type="number" placeholder="Minimum combat" [(ngModel)]="searchFaction.minCombat" name="minCombat"
+                       min="2" max="5"
+                       (change)="search()"/>
+              </div>
+              <div>
+                <input id="maximumCombat" matInput class="mat-input-element mat-form-field-autofill-control"
+                       type="number" placeholder="Maximum combat" [(ngModel)]="searchFaction.maxCombat"
+                       name="maxCombat" min="2" max="5"
+                       (change)="search()" />
+              </div>
+            </div>
+
+            <mat-label>Shoot</mat-label>
+            <div class="container"
+                 fxLayout
+                 fxLayout.xs="column"
+                 fxLayoutAlign="center"
+                 fxLayoutGap="30px"
+                 fxLayoutGap.xs="0">
+              <div>
+                <input id="minimumShoot" matInput class="mat-input-element mat-form-field-autofill-control"
+                       type="number" placeholder="Minimum shoot" [(ngModel)]="searchFaction.minShoot" name="minShoot"
+                       min="3" max="6"
+                       (change)="search()"/>
+              </div>
+              <div>
+                <input id="maximumShoot" matInput class="mat-input-element mat-form-field-autofill-control"
+                       type="number" placeholder="Maximum shoot" [(ngModel)]="searchFaction.maxShoot"
+                       name="maxShoot" min="3" max="6"
+                       (change)="search()" />
+              </div>
+            </div>
           </form>
         </div>
       </mat-card-content>

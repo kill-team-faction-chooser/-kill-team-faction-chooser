@@ -51,6 +51,12 @@ export class AppComponent implements OnInit {
     this.searchFaction.minMove = 4;
     this.searchFaction.maxMove = 9;
 
+    this.searchFaction.minCombat = 5;
+    this.searchFaction.maxCombat = 2;
+
+    this.searchFaction.minShoot = 6;
+    this.searchFaction.maxShoot = 3;
+
     this.setupSearchFilter();
   }
 
@@ -91,6 +97,34 @@ export class AppComponent implements OnInit {
           const movement = this.searchFaction.maxMove;
           const customFilter = [];
           customFilter.push(faction.maxMove <= movement);
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
+        if (this.searchFaction.minCombat) {
+          const combat = this.searchFaction.minCombat;
+          const customFilter = [];
+          customFilter.push(faction.minCombat <= combat);
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
+        if (this.searchFaction.maxCombat) {
+          const combat = this.searchFaction.maxCombat;
+          const customFilter = [];
+          customFilter.push(faction.maxCombat >= combat);
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
+        if (this.searchFaction.minShoot) {
+          const shoot = this.searchFaction.minShoot;
+          const customFilter = [];
+          customFilter.push(faction.minShoot <= shoot);
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
+        if (this.searchFaction.maxShoot) {
+          const shoot = this.searchFaction.maxShoot;
+          const customFilter = [];
+          customFilter.push(faction.maxShoot >= shoot);
           matchFilter.push(customFilter.some(Boolean)); // OR
         }
 
