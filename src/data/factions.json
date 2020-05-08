@@ -214,7 +214,8 @@
       "silver",
       "blue",
       "red",
-      "yellow"
+      "yellow",
+      "black"
     ],
     "minCombat": 3,
     "maxCombat": 3,
