@@ -20,7 +20,13 @@
     "minShoot": 3,
     "maxShoot": 3,
     "minPointCost": 9,
-    "maxPointCost": 15
+    "maxPointCost": 15,
+    "tags": [
+      "robot",
+      "mechanic",
+      "radioactif",
+      "cult"
+    ]
   },
   {
     "id": "genestealers",
@@ -48,7 +54,12 @@
     "minShoot": 6,
     "maxShoot": 4,
     "minPointCost": 5,
-    "maxPointCost": 15
+    "maxPointCost": 15,
+    "tags": [
+      "alien",
+      "cult",
+      "infiltrate"
+    ]
   },
   {
     "id": "spacemarines",
@@ -78,7 +89,13 @@
     "minShoot": 3,
     "maxShoot": 3,
     "minPointCost": 10,
-    "maxPointCost": 17
+    "maxPointCost": 17,
+    "tags": [
+      "knight",
+      "warrior",
+      "super",
+      "soldier"
+    ]
   },
   {
     "id": "orks",
@@ -101,7 +118,14 @@
     "minShoot": 5,
     "maxShoot": 4,
     "minPointCost": 3,
-    "maxPointCost": 12
+    "maxPointCost": 12,
+    "tags": [
+      "savage",
+      "brutal",
+      "cunning",
+      "fun",
+      "grots"
+    ]
   },
   {
     "id": "tyranids",
@@ -129,7 +153,18 @@
     "minShoot": 4,
     "maxShoot": 4,
     "minPointCost": 4,
-    "maxPointCost": 25
+    "maxPointCost": 25,
+    "tags": [
+      "alien",
+      "bugs",
+      "nids",
+      "hungry",
+      "zerg",
+      "rush",
+      "infiltrate",
+      "hunter",
+      "scary"
+    ]
   },
   {
     "id": "darkeldar",
@@ -153,7 +188,13 @@
     "minShoot": 3,
     "maxShoot": 3,
     "minPointCost": 7,
-    "maxPointCost": 9
+    "maxPointCost": 9,
+    "tags": [
+      "wicked",
+      "fast",
+      "traitor",
+      "scary"
+    ]
   },
   {
     "id": "deathwatch",
@@ -172,7 +213,13 @@
     "minShoot": 3,
     "maxShoot": 3,
     "minPointCost": 14,
-    "maxPointCost": 16
+    "maxPointCost": 16,
+    "tags": [
+      "hunter",
+      "super",
+      "soldier",
+      "warrior"
+    ]
   },
   {
     "id": "eldarharlequins",
@@ -196,7 +243,11 @@
     "minShoot": 3,
     "maxShoot": 3,
     "minPointCost": 12,
-    "maxPointCost": 12
+    "maxPointCost": 12,
+    "tags": [
+      "fast",
+      "camoflage"
+    ]
   },
   {
     "id": "tauempire",
@@ -219,7 +270,12 @@
     "minShoot": 5,
     "maxShoot": 4,
     "minPointCost": 0,
-    "maxPointCost": 20
+    "maxPointCost": 20,
+    "tags": [
+      "drone",
+      "mecha",
+      "shooty"
+    ]
   },
   {
     "id": "necrons",
@@ -244,7 +300,11 @@
     "minShoot": 6,
     "maxShoot": 3,
     "minPointCost": 10,
-    "maxPointCost": 16
+    "maxPointCost": 16,
+    "tags": [
+      "robot",
+      "skeleton"
+    ]
   },
   {
     "id": "choasspacemarines",
@@ -268,7 +328,13 @@
     "minShoot": 4,
     "maxShoot": 3,
     "minPointCost": 4,
-    "maxPointCost": 13
+    "maxPointCost": 13,
+    "tags": [
+      "super",
+      "soldier",
+      "warrior",
+      "traitor"
+    ]
   },
   {
     "id": "craftworldeldar",
@@ -294,7 +360,11 @@
     "minShoot": 3,
     "maxShoot": 3,
     "minPointCost": 6,
-    "maxPointCost": 11
+    "maxPointCost": 11,
+    "tags": [
+      "fast",
+      "shooty"
+    ]
   },
   {
     "id": "deathguard",
@@ -317,7 +387,16 @@
     "minShoot": 6,
     "maxShoot": 3,
     "minPointCost": 3,
-    "maxPointCost": 15
+    "maxPointCost": 15,
+    "tags": [
+      "super",
+      "soldier",
+      "warrior",
+      "resistant",
+      "endurance",
+      "sickness",
+      "contagion"
+    ]
   },
   {
     "id": "greyknights",
@@ -337,7 +416,14 @@
     "minShoot": 3,
     "maxShoot": 3,
     "minPointCost": 18,
-    "maxPointCost": 19
+    "maxPointCost": 19,
+    "tags": [
+      "super",
+      "soldier",
+      "warrior",
+      "magic",
+      "psychic"
+    ]
   },
   {
     "id": "thousandsons",
@@ -360,7 +446,14 @@
     "minShoot": 4,
     "maxShoot": 3,
     "minPointCost": 7,
-    "maxPointCost": 17
+    "maxPointCost": 17,
+    "tags": [
+      "super",
+      "soldier",
+      "warrior",
+      "magic",
+      "psychic"
+    ]
   },
   {
     "id": "imperialguard",
@@ -384,6 +477,10 @@
     "minShoot": 4,
     "maxShoot": 3,
     "minPointCost": 5,
-    "maxPointCost": 10
+    "maxPointCost": 10,
+    "tags": [
+      "human",
+      "flashlight"
+    ]
   }
 ]

@@ -123,7 +123,7 @@ export class AppComponent implements OnInit {
 
         // Quick search
         if (filters !== '[]') {
-          const columns = [faction.id, faction.name, faction.alignmentGNE, faction.alignmentLNC, faction.colors.toString()];
+          const columns = [faction.id, faction.name, faction.alignmentGNE, faction.alignmentLNC, faction.colors.toString(), faction.tags.toString()];
           const filterArray = filters.split(/\W+/);
 
           filterArray.forEach(filter => {
@@ -238,6 +238,7 @@ export class Faction {
   maxShoot: number;
   minPointCost: number;
   maxPointCost: number;
+  tags: string[];
 }
 
 export class Color {
