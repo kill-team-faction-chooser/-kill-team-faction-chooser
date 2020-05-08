@@ -27,4 +27,3 @@ jobs:
         artifacts: "dist/kill-team-faction-chooser/*"
     - run: npm ci
     - run: npm run build --prod
-    - run: npm test
