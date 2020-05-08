@@ -26,7 +26,9 @@
       "mechanic",
       "radioactif",
       "cult"
-    ]
+    ],
+    "minSave": 4,
+    "maxSave": 4
   },
   {
     "id": "genestealers",
@@ -59,7 +61,9 @@
       "alien",
       "cult",
       "infiltrate"
-    ]
+    ],
+    "minSave": 5,
+    "maxSave": 5
   },
   {
     "id": "spacemarines",
@@ -94,8 +98,11 @@
       "knight",
       "warrior",
       "super",
-      "soldier"
-    ]
+      "soldier",
+      "strong"
+    ],
+    "minSave": 4,
+    "maxSave": 3
   },
   {
     "id": "orks",
@@ -125,7 +132,9 @@
       "cunning",
       "fun",
       "grots"
-    ]
+    ],
+    "minSave": 6,
+    "maxSave": 6
   },
   {
     "id": "tyranids",
@@ -164,7 +173,9 @@
       "infiltrate",
       "hunter",
       "scary"
-    ]
+    ],
+    "minSave": 6,
+    "maxSave": 4
   },
   {
     "id": "darkeldar",
@@ -193,8 +204,11 @@
       "wicked",
       "fast",
       "traitor",
-      "scary"
-    ]
+      "scary",
+      "pain"
+    ],
+    "minSave": 6,
+    "maxSave": 5
   },
   {
     "id": "deathwatch",
@@ -215,11 +229,16 @@
     "minPointCost": 14,
     "maxPointCost": 16,
     "tags": [
+      "alien",
       "hunter",
       "super",
       "soldier",
-      "warrior"
-    ]
+      "warrior",
+      "strong",
+      "marine"
+    ],
+    "minSave": 3,
+    "maxSave": 3
   },
   {
     "id": "eldarharlequins",
@@ -246,8 +265,11 @@
     "maxPointCost": 12,
     "tags": [
       "fast",
-      "camoflage"
-    ]
+      "camoflage",
+      "acrobat"
+    ],
+    "minSave": 6,
+    "maxSave": 6
   },
   {
     "id": "tauempire",
@@ -275,7 +297,9 @@
       "drone",
       "mecha",
       "shooty"
-    ]
+    ],
+    "minSave": 5,
+    "maxSave": 3
   },
   {
     "id": "necrons",
@@ -303,8 +327,13 @@
     "maxPointCost": 16,
     "tags": [
       "robot",
-      "skeleton"
-    ]
+      "skeleton",
+      "slow",
+      "terminator",
+      "skynet"
+    ],
+    "minSave": 4,
+    "maxSave": 3
   },
   {
     "id": "choasspacemarines",
@@ -333,8 +362,11 @@
       "super",
       "soldier",
       "warrior",
-      "traitor"
-    ]
+      "traitor",
+      "strong"
+    ],
+    "minSave": 6,
+    "maxSave": 3
   },
   {
     "id": "craftworldeldar",
@@ -364,7 +396,9 @@
     "tags": [
       "fast",
       "shooty"
-    ]
+    ],
+    "minSave": 5,
+    "maxSave": 3
   },
   {
     "id": "deathguard",
@@ -395,8 +429,12 @@
       "resistant",
       "endurance",
       "sickness",
-      "contagion"
-    ]
+      "contagion",
+      "strong",
+      "nurgle"
+    ],
+    "minSave": 7,
+    "maxSave": 3
   },
   {
     "id": "greyknights",
@@ -422,8 +460,11 @@
       "soldier",
       "warrior",
       "magic",
-      "psychic"
-    ]
+      "psychic",
+      "strong"
+    ],
+    "minSave": 3,
+    "maxSave": 3
   },
   {
     "id": "thousandsons",
@@ -452,8 +493,12 @@
       "soldier",
       "warrior",
       "magic",
-      "psychic"
-    ]
+      "psychic",
+      "strong",
+      "tzeentch"
+    ],
+    "minSave": 6,
+    "maxSave": 3
   },
   {
     "id": "imperialguard",
@@ -480,7 +525,10 @@
     "maxPointCost": 10,
     "tags": [
       "human",
-      "flashlight"
-    ]
+      "flashlight",
+      "gi"
+    ],
+    "minSave": 5,
+    "maxSave": 4
   }
 ]

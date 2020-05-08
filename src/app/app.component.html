@@ -31,7 +31,8 @@
                        (keyup)="search()"
                        placeholder="Faction characteristics (colors, movement, ...)"
                        [(ngModel)]="quickSearchField"
-                       name="quickSearchField">
+                       name="quickSearchField"
+                       autofocus>
               </mat-form-field>
             </div>
 
@@ -152,6 +153,32 @@
 
             <div class="container">
               <mat-form-field>
+                <mat-label>Save</mat-label>
+                <div class="container"
+                     fxLayout
+                     fxLayout.xs="column"
+                     fxLayoutAlign="center"
+                     fxLayoutGap="30px"
+                     fxLayoutGap.xs="0">
+                  <div>
+                    <input id="minimumSave" matInput class="mat-input-element mat-form-field-autofill-control"
+                           type="number" placeholder="Minimum save" [(ngModel)]="searchFaction.minSave"
+                           name="minSave"
+                           min="3" max="7"
+                           (change)="search()"/>
+                  </div>
+                  <div>
+                    <input id="maximumSave" matInput class="mat-input-element mat-form-field-autofill-control"
+                           type="number" placeholder="Maximum save" [(ngModel)]="searchFaction.maxSave"
+                           name="maxSave" min="3" max="7"
+                           (change)="search()"/>
+                  </div>
+                </div>
+              </mat-form-field>
+            </div>
+
+            <div class="container">
+              <mat-form-field>
                 <mat-label>Point cost</mat-label>
                 <div class="container"
                      fxLayout
@@ -217,6 +244,11 @@
           <ng-container matColumnDef="shoot">
             <mat-header-cell *matHeaderCellDef>Shoot</mat-header-cell>
             <mat-cell *matCellDef="let faction">{{faction.minShoot}}+ / {{faction.maxShoot}}+</mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="save">
+            <mat-header-cell *matHeaderCellDef>Save</mat-header-cell>
+            <mat-cell *matCellDef="let faction">{{faction.minSave}}+ / {{faction.maxSave}}+</mat-cell>
           </ng-container>
 
           <ng-container matColumnDef="pointCost">
