@@ -297,7 +297,7 @@
     "id": "greyknights",
     "name": "Grey Knights",
     "thumbnailpath": "greyknights.png",
-    "alignmentLNC": "loyal",
+    "alignmentLNC": "lawful",
     "alignmentGNE": "neutral",
     "minMove": 6,
     "maxMove": 6,

@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   quickSearchField = '';
   searchFaction: Faction = new Faction();
 
-  colors: Color[] = [
+  colorChoices: Color[] = [
     {value: 'black', viewValue: 'Black'},
     {value: 'blue', viewValue: 'Blue'},
     {value: 'bone', viewValue: 'Bone'},
@@ -44,6 +44,19 @@ export class AppComponent implements OnInit {
     {value: 'turquoise', viewValue: 'Turquoise'},
     {value: 'white', viewValue: 'White'},
     {value: 'yellow', viewValue: 'Yellow'}
+  ];
+
+
+  alignmentLNCChoices: Alignment[] = [
+    {value: 'lawful', viewValue: 'Lawful'},
+    {value: 'neutral', viewValue: 'Neutral'},
+    {value: 'chaotic', viewValue: 'Chaotic'}
+  ];
+
+  alignmentGNEChoices: Alignment[] = [
+    {value: 'good', viewValue: 'Good'},
+    {value: 'neutral', viewValue: 'Neutral'},
+    {value: 'evil', viewValue: 'Evil'}
   ];
 
   @ViewChild(MatSort) set matSort(ms: MatSort) {
@@ -170,6 +183,24 @@ export class AppComponent implements OnInit {
           matchFilter.push(customFilter.some(Boolean)); // OR
         }
 
+        if (this.searchFaction.alignmentLNC) {
+          const alignment = this.searchFaction.alignmentLNC.toString();
+
+          const customFilter = [];
+          customFilter.push(faction.alignmentLNC === alignment);
+
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
+        if (this.searchFaction.alignmentGNE) {
+          const alignment = this.searchFaction.alignmentGNE.toString();
+
+          const customFilter = [];
+          customFilter.push(faction.alignmentGNE === alignment);
+
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
         return matchFilter.every(Boolean); // AND
       };
   }
@@ -191,6 +222,11 @@ export class Faction {
 }
 
 export class Color {
+  value: string;
+  viewValue: string;
+}
+
+export class Alignment {
   value: string;
   viewValue: string;
 }
