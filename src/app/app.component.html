@@ -204,6 +204,32 @@
             </div>
 
             <div class="container">
+              <mat-form-field>
+                <mat-label>Number of miniatures</mat-label>
+                <div class="container"
+                     fxLayout
+                     fxLayout.xs="column"
+                     fxLayoutAlign="center"
+                     fxLayoutGap="30px"
+                     fxLayoutGap.xs="0">
+                  <div>
+                    <input id="minimumNumberOfMiniatures" matInput class="mat-input-element mat-form-field-autofill-control"
+                           type="number" placeholder="Minimum number of miniatures" [(ngModel)]="searchFaction.minNumberOfMiniatures"
+                           name="minNumberOfMiniatures"
+                           min="2" max="20"
+                           (change)="search()"/>
+                  </div>
+                  <div>
+                    <input id="maximumNumberOfMiniatures" matInput class="mat-input-element mat-form-field-autofill-control"
+                           type="number" placeholder="Maximum number of miniatures" [(ngModel)]="searchFaction.maxNumberOfMiniatures"
+                           name="maxNumberOfMiniatures" min="2" max="20"
+                           (change)="search()"/>
+                  </div>
+                </div>
+              </mat-form-field>
+            </div>
+
+            <div class="container">
               <button mat-button (click)="resetForm()">Reset</button>
             </div>
           </form>
@@ -254,6 +280,11 @@
           <ng-container matColumnDef="pointCost">
             <mat-header-cell *matHeaderCellDef>Point cost</mat-header-cell>
             <mat-cell *matCellDef="let faction">{{faction.minPointCost}} / {{faction.maxPointCost}}</mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="numberOfMiniatures">
+            <mat-header-cell *matHeaderCellDef>Number of miniatures</mat-header-cell>
+            <mat-cell *matCellDef="let faction">{{faction.minNumberOfMiniatures}} / {{faction.maxNumberOfMiniatures}}</mat-cell>
           </ng-container>
 
           <mat-header-row *matHeaderRowDef="displayedFactionColumns"></mat-header-row>

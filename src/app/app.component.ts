@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   title = 'kill-team-faction-chooser';
   currentApplicationVersion = environment.appVersion;
 
-  displayedFactionColumns: string[] = ['thumbnail', 'name', 'alignment', 'movement', 'combat', 'shoot', 'save', 'pointCost'];
+  displayedFactionColumns: string[] = ['thumbnail', 'name', 'alignment', 'movement', 'combat', 'shoot', 'save', 'pointCost', 'numberOfMiniatures'];
 
   factionData: Faction[] = factionDataJsonFile;
 
@@ -108,6 +108,9 @@ export class AppComponent implements OnInit {
 
     this.searchFaction.minPointCost = 0;
     this.searchFaction.maxPointCost = 25;
+
+    this.searchFaction.minNumberOfMiniatures = 2;
+    this.searchFaction.maxNumberOfMiniatures = 20;
   }
 
   onRowClicked(row) {
@@ -235,6 +238,20 @@ export class AppComponent implements OnInit {
           matchFilter.push(customFilter.some(Boolean)); // OR
         }
 
+        if (this.searchFaction.minNumberOfMiniatures) {
+          const numberOfMiniatures = this.searchFaction.minNumberOfMiniatures;
+          const customFilter = [];
+          customFilter.push(faction.minNumberOfMiniatures >= numberOfMiniatures);
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
+        if (this.searchFaction.maxNumberOfMiniatures) {
+          const numberOfMiniatures = this.searchFaction.maxNumberOfMiniatures;
+          const customFilter = [];
+          customFilter.push(faction.maxNumberOfMiniatures <= numberOfMiniatures);
+          matchFilter.push(customFilter.some(Boolean)); // OR
+        }
+
         return matchFilter.every(Boolean); // AND
       };
   }
@@ -258,6 +275,8 @@ export class Faction {
   minSave: number;
   maxSave: number;
   tags: string[];
+  minNumberOfMiniatures: number;
+  maxNumberOfMiniatures: number;
 }
 
 export class Color {

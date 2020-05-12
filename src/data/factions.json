@@ -28,7 +28,9 @@
       "cult"
     ],
     "minSave": 4,
-    "maxSave": 4
+    "maxSave": 4,
+    "minNumberOfMiniatures": 3,
+    "maxNumberOfMiniatures": 10
   },
   {
     "id": "genestealers",
@@ -63,7 +65,9 @@
       "infiltrate"
     ],
     "minSave": 5,
-    "maxSave": 5
+    "maxSave": 5,
+    "minNumberOfMiniatures": 3,
+    "maxNumberOfMiniatures": 20
   },
   {
     "id": "spacemarines",
@@ -102,7 +106,9 @@
       "strong"
     ],
     "minSave": 4,
-    "maxSave": 3
+    "maxSave": 3,
+    "minNumberOfMiniatures": 3,
+    "maxNumberOfMiniatures": 10
   },
   {
     "id": "orks",
@@ -134,7 +140,9 @@
       "grots"
     ],
     "minSave": 6,
-    "maxSave": 6
+    "maxSave": 6,
+    "minNumberOfMiniatures": 5,
+    "maxNumberOfMiniatures": 20
   },
   {
     "id": "tyranids",
@@ -175,7 +183,9 @@
       "scary"
     ],
     "minSave": 6,
-    "maxSave": 4
+    "maxSave": 4,
+    "minNumberOfMiniatures": 3,
+    "maxNumberOfMiniatures": 20
   },
   {
     "id": "darkeldar",
@@ -208,7 +218,9 @@
       "pain"
     ],
     "minSave": 6,
-    "maxSave": 5
+    "maxSave": 5,
+    "minNumberOfMiniatures": 6,
+    "maxNumberOfMiniatures": 14
   },
   {
     "id": "deathwatch",
@@ -238,7 +250,9 @@
       "marine"
     ],
     "minSave": 3,
-    "maxSave": 3
+    "maxSave": 3,
+    "minNumberOfMiniatures": 3,
+    "maxNumberOfMiniatures": 7
   },
   {
     "id": "eldarharlequins",
@@ -269,7 +283,9 @@
       "acrobat"
     ],
     "minSave": 6,
-    "maxSave": 6
+    "maxSave": 6,
+    "minNumberOfMiniatures": 3,
+    "maxNumberOfMiniatures": 8
   },
   {
     "id": "tauempire",
@@ -299,7 +315,9 @@
       "shooty"
     ],
     "minSave": 5,
-    "maxSave": 3
+    "maxSave": 3,
+    "minNumberOfMiniatures": 3,
+    "maxNumberOfMiniatures": 16
   },
   {
     "id": "necrons",
@@ -333,7 +351,9 @@
       "skynet"
     ],
     "minSave": 4,
-    "maxSave": 3
+    "maxSave": 3,
+    "minNumberOfMiniatures": 3,
+    "maxNumberOfMiniatures": 10
   },
   {
     "id": "choasspacemarines",
@@ -366,7 +386,9 @@
       "strong"
     ],
     "minSave": 6,
-    "maxSave": 3
+    "maxSave": 3,
+    "minNumberOfMiniatures": 4,
+    "maxNumberOfMiniatures": 20
   },
   {
     "id": "craftworldeldar",
@@ -398,7 +420,9 @@
       "shooty"
     ],
     "minSave": 5,
-    "maxSave": 3
+    "maxSave": 3,
+    "minNumberOfMiniatures": 4,
+    "maxNumberOfMiniatures": 16
   },
   {
     "id": "deathguard",
@@ -434,7 +458,9 @@
       "nurgle"
     ],
     "minSave": 7,
-    "maxSave": 3
+    "maxSave": 3,
+    "minNumberOfMiniatures": 3,
+    "maxNumberOfMiniatures": 20
   },
   {
     "id": "greyknights",
@@ -464,7 +490,9 @@
       "strong"
     ],
     "minSave": 3,
-    "maxSave": 3
+    "maxSave": 3,
+    "minNumberOfMiniatures": 2,
+    "maxNumberOfMiniatures": 5
   },
   {
     "id": "thousandsons",
@@ -498,7 +526,9 @@
       "tzeentch"
     ],
     "minSave": 6,
-    "maxSave": 3
+    "maxSave": 3,
+    "minNumberOfMiniatures": 3,
+    "maxNumberOfMiniatures": 14
   },
   {
     "id": "imperialguard",
@@ -529,6 +559,8 @@
       "gi"
     ],
     "minSave": 5,
-    "maxSave": 4
+    "maxSave": 4,
+    "minNumberOfMiniatures": 5,
+    "maxNumberOfMiniatures": 20
   }
 ]
