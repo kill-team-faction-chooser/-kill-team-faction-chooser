@@ -46,6 +46,18 @@ export class AppComponent implements OnInit {
     {value: 'yellow', viewValue: 'Yellow'}
   ];
 
+  specialistChoices: Specialist[] = [
+    {value: 'combat', viewValue: 'Combat'},
+    {value: 'communications', viewValue: 'Communications'},
+    {value: 'demolition', viewValue: 'Demolition'},
+    {value: 'heavy_support', viewValue: 'Heavy support'},
+    {value: 'leader', viewValue: 'Leader'},
+    {value: 'medic', viewValue: 'Medic'},
+    {value: 'scout', viewValue: 'Scout'},
+    {value: 'sniper', viewValue: 'Sniper'},
+    {value: 'veteran', viewValue: 'Veteran'},
+    {value: 'zealot', viewValue: 'Zealot'}
+  ];
 
   alignmentLNCChoices: Alignment[] = [
     {value: 'lawful', viewValue: 'Lawful'},
@@ -111,6 +123,9 @@ export class AppComponent implements OnInit {
 
     this.searchFaction.minNumberOfMiniatures = 2;
     this.searchFaction.maxNumberOfMiniatures = 20;
+
+    this.searchFaction.specialists = [];
+    this.searchFaction.specialists[this.getSpecialistIndex('leader')] = true;
   }
 
   onRowClicked(row) {
@@ -122,14 +137,14 @@ export class AppComponent implements OnInit {
   }
 
   setupSearchFilter() {
-
     this.factionDataSource.filterPredicate =
       (faction: Faction, filters: string) => {
         const matchFilter = [];
 
         // Quick search
         if (filters !== '[]') {
-          const columns = [faction.id, faction.name, faction.alignmentGNE, faction.alignmentLNC, faction.colors.toString(), faction.tags.toString()];
+          const columns = [faction.id, faction.name, faction.alignmentGNE, faction.alignmentLNC, faction.colors.toString()
+            , faction.tags.toString(), faction.specialists.toString()];
           const filterArray = filters.split(/\W+/);
 
           filterArray.forEach(filter => {
@@ -252,8 +267,29 @@ export class AppComponent implements OnInit {
           matchFilter.push(customFilter.some(Boolean)); // OR
         }
 
+        if (this.searchFaction.specialists) {
+          const customFilter = [];
+          for (let i = 0; i < this.searchFaction.specialists.length; i++) {
+            if (this.searchFaction.specialists[i]) {
+              customFilter.push(faction.specialists[i]);
+            }
+          }
+          matchFilter.push(customFilter.every(Boolean)); // AND
+        }
+
         return matchFilter.every(Boolean); // AND
       };
+  }
+
+  getSpecialistIndex(specialist: string) {
+    for (let i = 0; i < this.specialistChoices.length; i++) {
+      if (this.specialistChoices[i].value === specialist) {
+        return i;
+      }
+    }
+
+    // Not found
+    return -1;
   }
 }
 
@@ -277,6 +313,7 @@ export class Faction {
   tags: string[];
   minNumberOfMiniatures: number;
   maxNumberOfMiniatures: number;
+  specialists: boolean[];
 }
 
 export class Color {
@@ -285,6 +322,11 @@ export class Color {
 }
 
 export class Alignment {
+  value: string;
+  viewValue: string;
+}
+
+export class Specialist {
   value: string;
   viewValue: string;
 }

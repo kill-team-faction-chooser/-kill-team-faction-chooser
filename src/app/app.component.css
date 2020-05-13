@@ -298,3 +298,13 @@ svg#clouds {
 .faction-table{
   width: 100%;
 }
+
+.mat-header-cell:first-of-type.table-image{
+  padding-left: 0px;
+  padding-right: 50px;
+}
+
+.mat-cell:first-of-type.table-image{
+  padding-left: 0px;
+  padding-right: 50px;
+}

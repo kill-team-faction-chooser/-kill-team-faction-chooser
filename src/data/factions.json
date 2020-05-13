@@ -25,12 +25,14 @@
       "robot",
       "mechanic",
       "radioactif",
-      "cult"
+      "cult",
+      "sniper"
     ],
     "minSave": 4,
     "maxSave": 4,
     "minNumberOfMiniatures": 3,
-    "maxNumberOfMiniatures": 10
+    "maxNumberOfMiniatures": 10,
+    "specialists": [true, true, true, true, true, false, true, true, true, true]
   },
   {
     "id": "genestealers",
@@ -67,7 +69,8 @@
     "minSave": 5,
     "maxSave": 5,
     "minNumberOfMiniatures": 3,
-    "maxNumberOfMiniatures": 20
+    "maxNumberOfMiniatures": 20,
+    "specialists": [true, true, true, true, true, true, true, false, true, true]
   },
   {
     "id": "spacemarines",
@@ -103,12 +106,14 @@
       "warrior",
       "super",
       "soldier",
-      "strong"
+      "strong",
+      "sniper"
     ],
     "minSave": 4,
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
-    "maxNumberOfMiniatures": 10
+    "maxNumberOfMiniatures": 10,
+    "specialists": [true, true, true, true, true, false, true, true, true, false]
   },
   {
     "id": "orks",
@@ -142,7 +147,8 @@
     "minSave": 6,
     "maxSave": 6,
     "minNumberOfMiniatures": 5,
-    "maxNumberOfMiniatures": 20
+    "maxNumberOfMiniatures": 20,
+    "specialists": [true, true, true, true, true, false, true, false, true, true]
   },
   {
     "id": "tyranids",
@@ -185,7 +191,8 @@
     "minSave": 6,
     "maxSave": 4,
     "minNumberOfMiniatures": 3,
-    "maxNumberOfMiniatures": 20
+    "maxNumberOfMiniatures": 20,
+    "specialists": [true, true, false, true, true, false, true, false, true, false]
   },
   {
     "id": "darkeldar",
@@ -215,12 +222,14 @@
       "fast",
       "traitor",
       "scary",
-      "pain"
+      "pain",
+      "sniper"
     ],
     "minSave": 6,
     "maxSave": 5,
     "minNumberOfMiniatures": 6,
-    "maxNumberOfMiniatures": 14
+    "maxNumberOfMiniatures": 14,
+    "specialists": [true, true, false, false, true, false, true, true, true, true]
   },
   {
     "id": "deathwatch",
@@ -252,7 +261,8 @@
     "minSave": 3,
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
-    "maxNumberOfMiniatures": 7
+    "maxNumberOfMiniatures": 7,
+    "specialists": [true, true, true, true, true, false, false, true, true, true]
   },
   {
     "id": "eldarharlequins",
@@ -285,7 +295,8 @@
     "minSave": 6,
     "maxSave": 6,
     "minNumberOfMiniatures": 3,
-    "maxNumberOfMiniatures": 8
+    "maxNumberOfMiniatures": 8,
+    "specialists": [true, false, false, false, true, true, true, false, true, true]
   },
   {
     "id": "tauempire",
@@ -312,12 +323,14 @@
     "tags": [
       "drone",
       "mecha",
-      "shooty"
+      "shooty",
+      "sniper"
     ],
     "minSave": 5,
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
-    "maxNumberOfMiniatures": 16
+    "maxNumberOfMiniatures": 16,
+    "specialists": [false, true, true, true, true, true, true, true, true, false]
   },
   {
     "id": "necrons",
@@ -348,12 +361,14 @@
       "skeleton",
       "slow",
       "terminator",
-      "skynet"
+      "skynet",
+      "sniper"
     ],
     "minSave": 4,
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
-    "maxNumberOfMiniatures": 10
+    "maxNumberOfMiniatures": 10,
+    "specialists": [true, true, false, false, true, false, true, true, true, true]
   },
   {
     "id": "choasspacemarines",
@@ -388,7 +403,8 @@
     "minSave": 6,
     "maxSave": 3,
     "minNumberOfMiniatures": 4,
-    "maxNumberOfMiniatures": 20
+    "maxNumberOfMiniatures": 20,
+    "specialists": [true, false, true, true, true, false, true, true, true, true]
   },
   {
     "id": "craftworldeldar",
@@ -417,12 +433,14 @@
     "maxPointCost": 11,
     "tags": [
       "fast",
-      "shooty"
+      "shooty",
+      "sniper"
     ],
     "minSave": 5,
     "maxSave": 3,
     "minNumberOfMiniatures": 4,
-    "maxNumberOfMiniatures": 16
+    "maxNumberOfMiniatures": 16,
+    "specialists": [true, true, true, false, true, true, true, true, true, false]
   },
   {
     "id": "deathguard",
@@ -460,7 +478,8 @@
     "minSave": 7,
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
-    "maxNumberOfMiniatures": 20
+    "maxNumberOfMiniatures": 20,
+    "specialists": [true, true, true, true, true, false, false, false, true, true]
   },
   {
     "id": "greyknights",
@@ -492,7 +511,8 @@
     "minSave": 3,
     "maxSave": 3,
     "minNumberOfMiniatures": 2,
-    "maxNumberOfMiniatures": 5
+    "maxNumberOfMiniatures": 5,
+    "specialists": [true, true, true, true, true, false, false, false, true, true]
   },
   {
     "id": "thousandsons",
@@ -528,7 +548,8 @@
     "minSave": 6,
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
-    "maxNumberOfMiniatures": 14
+    "maxNumberOfMiniatures": 14,
+    "specialists": [true, true, true, true, true, true, false, false, true, true]
   },
   {
     "id": "imperialguard",
@@ -556,11 +577,13 @@
     "tags": [
       "human",
       "flashlight",
-      "gi"
+      "gi",
+      "sniper"
     ],
     "minSave": 5,
     "maxSave": 4,
     "minNumberOfMiniatures": 5,
-    "maxNumberOfMiniatures": 20
+    "maxNumberOfMiniatures": 20,
+    "specialists": [false, true, true, true, true, true, true, true, true, false]
   }
 ]
