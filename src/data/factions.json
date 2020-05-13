@@ -32,7 +32,8 @@
     "maxSave": 4,
     "minNumberOfMiniatures": 3,
     "maxNumberOfMiniatures": 10,
-    "specialists": [true, true, true, true, true, false, true, true, true, true]
+    "specialists": [true, true, true, true, true, false, true, true, true, true],
+    "tactics": ["better attack", "better aim", "better movement", "omnissiah"]
   },
   {
     "id": "genestealers",
@@ -70,7 +71,8 @@
     "maxSave": 5,
     "minNumberOfMiniatures": 3,
     "maxNumberOfMiniatures": 20,
-    "specialists": [true, true, true, true, true, true, true, false, true, true]
+    "specialists": [true, true, true, true, true, true, true, false, true, true],
+    "tactics": ["extra attack", "fall guy", "overwatch", "hammer time", "better aim", "extra save"]
   },
   {
     "id": "spacemarines",
@@ -113,7 +115,8 @@
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
     "maxNumberOfMiniatures": 10,
-    "specialists": [true, true, true, true, true, false, true, true, true, false]
+    "specialists": [true, true, true, true, true, false, true, true, true, false],
+    "tactics": ["kill traitors", "fight again", "extra armor", "powerful shot", "good aim", "shock"]
   },
   {
     "id": "orks",
@@ -138,6 +141,7 @@
     "minPointCost": 3,
     "maxPointCost": 12,
     "tags": [
+      "alien",
       "savage",
       "brutal",
       "cunning",
@@ -148,7 +152,8 @@
     "maxSave": 6,
     "minNumberOfMiniatures": 5,
     "maxNumberOfMiniatures": 20,
-    "specialists": [true, true, true, true, true, false, true, false, true, true]
+    "specialists": [true, true, true, true, true, false, true, false, true, true],
+    "tactics": ["stronger", "extra attack", "extra shot", "tough", "canon fodder", "grenade"]
   },
   {
     "id": "tyranids",
@@ -186,13 +191,16 @@
       "rush",
       "infiltrate",
       "hunter",
-      "scary"
+      "scary",
+      "acid",
+      "terror"
     ],
     "minSave": 6,
     "maxSave": 4,
     "minNumberOfMiniatures": 3,
     "maxNumberOfMiniatures": 20,
-    "specialists": [true, true, false, true, true, false, true, false, true, false]
+    "specialists": [true, true, false, true, true, false, true, false, true, false],
+    "tactics": ["acid blood", "eat brain", "better wounds", "extra movement", "hide", "better attack"]
   },
   {
     "id": "darkeldar",
@@ -218,6 +226,7 @@
     "minPointCost": 7,
     "maxPointCost": 9,
     "tags": [
+      "alien",
       "wicked",
       "fast",
       "traitor",
@@ -229,7 +238,8 @@
     "maxSave": 5,
     "minNumberOfMiniatures": 6,
     "maxNumberOfMiniatures": 14,
-    "specialists": [true, true, false, false, true, false, true, true, true, true]
+    "specialists": [true, true, false, false, true, false, true, true, true, true],
+    "tactics": ["shoot and move", "move and shoot", "terrorise", "extra wound"]
   },
   {
     "id": "deathwatch",
@@ -256,13 +266,15 @@
       "soldier",
       "warrior",
       "strong",
-      "marine"
+      "marine",
+      "hammer"
     ],
     "minSave": 3,
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
     "maxNumberOfMiniatures": 7,
-    "specialists": [true, true, true, true, true, false, false, true, true, true]
+    "specialists": [true, true, true, true, true, false, false, true, true, true],
+    "tactics": ["powerful shot", "extra attack", "wound well", "better hits"]
   },
   {
     "id": "eldarharlequins",
@@ -288,6 +300,7 @@
     "minPointCost": 12,
     "maxPointCost": 12,
     "tags": [
+      "alien",
       "fast",
       "camoflage",
       "acrobat"
@@ -296,7 +309,8 @@
     "maxSave": 6,
     "minNumberOfMiniatures": 3,
     "maxNumberOfMiniatures": 8,
-    "specialists": [true, false, false, false, true, true, true, false, true, true]
+    "specialists": [true, false, false, false, true, true, true, false, true, true],
+    "tactics": ["extra save", "extra shot", "better move", "extra attack", "shoot and move", "better hits"]
   },
   {
     "id": "tauempire",
@@ -321,6 +335,7 @@
     "minPointCost": 0,
     "maxPointCost": 20,
     "tags": [
+      "alien",
       "drone",
       "mecha",
       "shooty",
@@ -330,7 +345,8 @@
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
     "maxNumberOfMiniatures": 16,
-    "specialists": [false, true, true, true, true, true, true, true, true, false]
+    "specialists": [false, true, true, true, true, true, true, true, true, false],
+    "tactics": ["laser pointer", "better wounds", "extra movement", "extra save"]
   },
   {
     "id": "necrons",
@@ -357,18 +373,21 @@
     "minPointCost": 10,
     "maxPointCost": 16,
     "tags": [
+      "alien",
       "robot",
       "skeleton",
       "slow",
       "terminator",
       "skynet",
-      "sniper"
+      "sniper",
+      "I'll be back"
     ],
     "minSave": 4,
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
     "maxNumberOfMiniatures": 10,
-    "specialists": [true, true, false, false, true, false, true, true, true, true]
+    "specialists": [true, true, false, false, true, false, true, true, true, true],
+    "tactics": ["get back up", "stronger", "better aim", "mind control", "better wounds", "better shot"]
   },
   {
     "id": "choasspacemarines",
@@ -404,7 +423,8 @@
     "maxSave": 3,
     "minNumberOfMiniatures": 4,
     "maxNumberOfMiniatures": 20,
-    "specialists": [true, false, true, true, true, false, true, true, true, true]
+    "specialists": [true, false, true, true, true, false, true, true, true, true],
+    "tactics": ["marine killer", "extra attack", "better wounds", "better hits"]
   },
   {
     "id": "craftworldeldar",
@@ -432,6 +452,7 @@
     "minPointCost": 6,
     "maxPointCost": 11,
     "tags": [
+      "alien",
       "fast",
       "shooty",
       "sniper"
@@ -440,7 +461,8 @@
     "maxSave": 3,
     "minNumberOfMiniatures": 4,
     "maxNumberOfMiniatures": 16,
-    "specialists": [true, true, true, false, true, true, true, true, true, false]
+    "specialists": [true, true, true, false, true, true, true, true, true, false],
+    "tactics": ["better movement", "move and shoot", "redeploy", "shoot and move", "better shot", "extra save"]
   },
   {
     "id": "deathguard",
@@ -479,7 +501,8 @@
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
     "maxNumberOfMiniatures": 20,
-    "specialists": [true, true, true, true, true, false, false, false, true, true]
+    "specialists": [true, true, true, true, true, false, false, false, true, true],
+    "tactics": ["extra attack", "cover", "better wounds", "better hits", "extra wound", "zombies"]
   },
   {
     "id": "greyknights",
@@ -512,7 +535,8 @@
     "maxSave": 3,
     "minNumberOfMiniatures": 2,
     "maxNumberOfMiniatures": 5,
-    "specialists": [true, true, true, true, true, false, false, false, true, true]
+    "specialists": [true, true, true, true, true, false, false, false, true, true],
+    "tactics": ["powerful shot", "extra attack", "better armor", "psychic mastery"]
   },
   {
     "id": "thousandsons",
@@ -549,7 +573,8 @@
     "maxSave": 3,
     "minNumberOfMiniatures": 3,
     "maxNumberOfMiniatures": 14,
-    "specialists": [true, true, true, true, true, true, false, false, true, true]
+    "specialists": [true, true, true, true, true, true, false, false, true, true],
+    "tactics": ["psychic mastery", "better save", "better hits", "extra attack", "extra wound", "flames"]
   },
   {
     "id": "imperialguard",
@@ -584,6 +609,7 @@
     "maxSave": 4,
     "minNumberOfMiniatures": 5,
     "maxNumberOfMiniatures": 20,
-    "specialists": [false, true, true, true, true, true, true, true, true, false]
+    "specialists": [false, true, true, true, true, true, true, true, true, false],
+    "tactics": ["overwatch", "extra order", "duck and cover", "brave"]
   }
 ]
