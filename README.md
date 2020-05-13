@@ -38,4 +38,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Resources
 
 * src/data/factions.json : characteristics of the factions.
+  * Order of the specialist characteristics :
+    * combat;
+    * communications;
+    * demolition;
+    * heavy_support;
+    * leader;
+    * medic;
+    * scout;
+    * sniper;
+    * veteran;
+    * zealot.
 * Kill Team resources : https://www.warhammer-community.com/2018/07/06/kill-team-faction-focus-index/
